@@ -7,6 +7,7 @@ import Hero from './components/Hero'
 import Skill from './components/Skill'
 import Edu from './components/Edu'
 import Cert from './components/Cert'
+import Project from './components/Project'
 import './App.css';
 
 const font = "'Lato', sans-serif"
@@ -41,6 +42,7 @@ function App() {
       <Edu />
       <Cert />
       <Divider variant="middle" />
+      <Project />
 		</ThemeProvider>
   )
 }
