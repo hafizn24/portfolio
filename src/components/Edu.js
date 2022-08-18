@@ -15,7 +15,7 @@ function Edu() {
                 justifyContent="center"
                 alignItems="center"
             >
-                <Typography variant="h3">Education</Typography>
+                <Typography variant="h4">Education</Typography>
             </Grid>
             <Grid
                 container
