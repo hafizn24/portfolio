@@ -1,10 +1,12 @@
 import { createTheme, ThemeProvider} from '@mui/material/styles'
 import { CssBaseline } from '@mui/material'
+import { Divider } from "@mui/material"
 
 import Appbar from './components/Appbar'
 import Hero from './components/Hero'
 import Skill from './components/Skill'
 import Edu from './components/Edu'
+import Cert from './components/Cert'
 import './App.css';
 
 const font = "'Lato', sans-serif"
@@ -34,8 +36,10 @@ function App() {
       <CssBaseline enableColorScheme />
       <Appbar/>
       <Hero />
+      <Divider variant="middle" />
       <Skill />
       <Edu />
+      <Cert />
 		</ThemeProvider>
   )
 }

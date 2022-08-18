@@ -24,15 +24,15 @@ function Edu() {
                 alignItems="baseline"
             >
                 <Box sx={{p:2}}>
-                <Typography variant="h6">
-                    DIPLOMA
-                    <Typography variant="h6" color="primary" sx={{ fontWeight: 'bold' }}>
-                        COMPUTER SCIENCE
+                    <Typography variant="h6">
+                        DIPLOMA
+                        <Typography variant="h6" color="primary" sx={{ fontWeight: 'bold' }}>
+                            COMPUTER SCIENCE
+                        </Typography>
                     </Typography>
-                </Typography>
-                <Typography variant="subtitle1" color="secondary">
-                    Universiti Teknologi MARA (UiTM), SEGAMAT
-                </Typography>
+                    <Typography variant="subtitle1" color="secondary">
+                        Universiti Teknologi MARA (UiTM), SEGAMAT
+                    </Typography>
                 </Box>
                 <Box sx={{p:2}}>
                     <Typography variant="h6">
@@ -42,7 +42,10 @@ function Edu() {
                         </Typography>
                     </Typography>
                     <Typography variant="subtitle1" color="secondary">
-                    Universiti Teknologi MARA (UiTM), SHAH ALAM
+                        Universiti Teknologi MARA (UiTM), SHAH ALAM
+                    </Typography>
+                    <Typography variant="subtitle2">
+                        CGPA: 3.46/4.00
                     </Typography>
                 </Box>
             </Grid>

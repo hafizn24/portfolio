@@ -2,9 +2,9 @@ import { Box } from "@mui/system"
 import { Grid } from "@mui/material"
 import { Typography } from "@mui/material"
 import { Link } from "@mui/material"
-import { Divider } from "@mui/material"
 import { IconButton } from "@mui/material"
 import { Avatar } from "@mui/material"
+import { Tooltip } from "@mui/material"
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import EmailIcon from '@mui/icons-material/Email'
 import hafiz from './images/hafiz.jpg'
@@ -79,16 +79,18 @@ function Hero() {
                 alignItems="center"
                 sx={{m:1}}
             >
-                
-                <Link href="https://www.linkedin.com/in/muhammad-hafiz-bin-mohd-nasarudin-7a73171ab/" underline="none" target={"_blank"} sx={{mx:1}}>
-                    <IconButton><LinkedInIcon sx={{color:'white', fontSize: 46}}/></IconButton>
-                </Link>
-                <Link href="mailto:hafizn24@gmail.com" underline="none" target={"_blank"} sx={{mx:1}}>
-                    <IconButton><EmailIcon sx={{color:'white', fontSize: 46}}/></IconButton>
-                </Link>
+                <Tooltip title="LinkedIn">
+                    <Link href="https://www.linkedin.com/in/muhammad-hafiz-bin-mohd-nasarudin-7a73171ab/" underline="none" target={"_blank"} sx={{mx:1}}>
+                        <IconButton><LinkedInIcon sx={{color:'white', fontSize: 46}}/></IconButton>
+                    </Link>
+                </Tooltip>
+                <Tooltip title="hafizn24@gmail.com">
+                    <Link href="mailto:hafizn24@gmail.com" underline="none" target={"_blank"} sx={{mx:1}}>
+                        <IconButton><EmailIcon sx={{color:'white', fontSize: 46}}/></IconButton>
+                    </Link>
+                </Tooltip>
             </Grid>
         </Grid>
-        <Divider variant="middle" />
     </Box>
   )
 }
