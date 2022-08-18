@@ -32,7 +32,7 @@ function Skill() {
             justifyContent="center"
             alignItems="center"
         >
-            <Paper sx={{
+            <Paper elevation={0} sx={{
                 mx:2,
                 my:1,
                 px:5,
@@ -58,61 +58,61 @@ function Skill() {
                 >
                     <Box sx={{p:1}}>
                         <Tooltip title="Python">
-                            <IconButton size="large">
+                            <IconButton size="medium">
                                 <SiPython />
                             </IconButton>
                         </Tooltip>
                         <Tooltip title="R">
-                            <IconButton size="large">
+                            <IconButton size="medium">
                                 <SiR />
                             </IconButton>
                         </Tooltip>
                         <Tooltip title="HTML">
-                            <IconButton size="large">
+                            <IconButton size="medium">
                                 <SiHtml5 />
                             </IconButton>
                         </Tooltip>
                         <Tooltip title="CSS">
-                            <IconButton size="large">
+                            <IconButton size="medium">
                                 <SiCss3 />
                             </IconButton>
                         </Tooltip>
                         <Tooltip title="JavaScript">
-                            <IconButton size="large">
+                            <IconButton size="medium">
                                 <SiJavascript />
                             </IconButton>
                         </Tooltip>
                     </Box>
                     <Box sx={{p:1}}>
                         <Tooltip title="PHP">
-                            <IconButton size="large">
+                            <IconButton size="medium">
                                 <SiPhp />
                             </IconButton>
                         </Tooltip>
                         <Tooltip title="MySQL">
-                            <IconButton size="large">
+                            <IconButton size="medium">
                                 <SiMysql />
                             </IconButton>
                         </Tooltip>
                         <Tooltip title="MongoDB">
-                            <IconButton size="large">
+                            <IconButton size="medium">
                                 <SiMongodb />
                             </IconButton>
                         </Tooltip>
                         <Tooltip title="Java">
-                            <IconButton size="large">
+                            <IconButton size="medium">
                                 <SiJava />
                             </IconButton>
                         </Tooltip>
                         <Tooltip title="C++">
-                            <IconButton size="large">
+                            <IconButton size="medium">
                                 <SiCplusplus />
                             </IconButton>
                         </Tooltip>
                     </Box>
                 </Grid>
             </Paper>
-            <Paper sx={{
+            <Paper elevation={0} sx={{
                 mx:2,
                 my:1,
                 px:5,
@@ -138,39 +138,39 @@ function Skill() {
                 >
                     <Box sx={{p:1}}>
                         <Tooltip title="React">
-                            <IconButton size="large">
+                            <IconButton size="medium">
                                 <SiReact />
                             </IconButton>
                         </Tooltip>
                         <Tooltip title="Nodejs">
-                            <IconButton size="large">
+                            <IconButton size="medium">
                                 <SiNodedotjs />
                             </IconButton>
                         </Tooltip>
                         <Tooltip title="Git">
-                            <IconButton size="large">
+                            <IconButton size="medium">
                                 <SiGit />
                             </IconButton>
                         </Tooltip>
                         <Tooltip title="TensorFlow">
-                            <IconButton size="large">
+                            <IconButton size="medium">
                                 <SiTensorflow />
                             </IconButton>
                         </Tooltip>
                     </Box>
                     <Box sx={{p:1}}>
                         <Tooltip title="Jupyter">
-                            <IconButton size="large">
+                            <IconButton size="medium">
                                 <SiJupyter />
                             </IconButton>
                         </Tooltip>
                         <Tooltip title="RStudio">
-                            <IconButton size="large">
+                            <IconButton size="medium">
                                 <SiRstudio />
                             </IconButton>
                         </Tooltip>
                         <Tooltip title="Excel">
-                            <IconButton size="large">
+                            <IconButton size="medium">
                                 <BsFileEarmarkExcel />
                             </IconButton>
                         </Tooltip>

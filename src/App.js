@@ -2,8 +2,9 @@ import { createTheme, ThemeProvider} from '@mui/material/styles'
 import { CssBaseline } from '@mui/material'
 
 import Appbar from './components/Appbar'
-import Hero from './components/Hero';
-import Skill from './components/Skill';
+import Hero from './components/Hero'
+import Skill from './components/Skill'
+import Edu from './components/Edu'
 import './App.css';
 
 const font = "'Lato', sans-serif"
@@ -18,7 +19,7 @@ const theme = createTheme({
       main: '#7e57c2', //6383ea
     },
     background: {
-      default: '#212121',
+      default: '#141414', // 212121
       paper: '#1E1E1E', //303030
     },
   },
@@ -34,6 +35,7 @@ function App() {
       <Appbar/>
       <Hero />
       <Skill />
+      <Edu />
 		</ThemeProvider>
   )
 }
