@@ -40,6 +40,7 @@ function App() {
       <Skill />
       <Edu />
       <Cert />
+      <Divider variant="middle" />
 		</ThemeProvider>
   )
 }

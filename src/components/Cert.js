@@ -19,7 +19,13 @@ function Cert() {
         justifyContent="center"
         alignItems="center"
     >
-        <Box sx={{p:2, border: '1px dashed grey'}}>
+        <Typography variant="h4">Certificates</Typography>
+        <Box sx={{
+            p:1.5,
+            width: {
+                lg: "60%"
+            }
+            }}>
             <Splide aria-label="My Favorite Images">
                 <SplideSlide>
                     <CardMedia
