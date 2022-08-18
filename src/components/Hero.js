@@ -4,11 +4,13 @@ import { Typography } from "@mui/material"
 import { Link } from "@mui/material"
 import { Divider } from "@mui/material"
 import { IconButton } from "@mui/material"
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import EmailIcon from '@mui/icons-material/Email';
+import { Avatar } from "@mui/material"
+import LinkedInIcon from '@mui/icons-material/LinkedIn'
+import EmailIcon from '@mui/icons-material/Email'
+import hafiz from './images/hafiz.jpg'
 
 function Hero() {
-   return (
+    return (
     <Box sx={{p:2}}>
         <Grid
             container
@@ -16,6 +18,7 @@ function Hero() {
             justifyContent="center"
             alignItems="center"
         >
+            <Avatar src={hafiz} sx={{ width: 180, height: 180 }}/>
             <Typography variant="h3">
                 Muhammad Hafiz
             </Typography>
