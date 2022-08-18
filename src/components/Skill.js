@@ -16,7 +16,8 @@ import {
     SiGit,
     SiTensorflow,
     SiJupyter,
-    SiRstudio
+    SiRstudio,
+    SiMaterialui
 } from 'react-icons/si'
 import { BsFileEarmarkExcel } from 'react-icons/bs'
 import { Tooltip } from "@mui/material"
@@ -152,13 +153,18 @@ function Skill() {
                                 <SiGit />
                             </IconButton>
                         </Tooltip>
+                        <Tooltip title="Material UI">
+                            <IconButton size="medium">
+                                <SiMaterialui />
+                            </IconButton>
+                        </Tooltip>
+                    </Box>
+                    <Box sx={{p:1}}>
                         <Tooltip title="TensorFlow">
                             <IconButton size="medium">
                                 <SiTensorflow />
                             </IconButton>
                         </Tooltip>
-                    </Box>
-                    <Box sx={{p:1}}>
                         <Tooltip title="Jupyter">
                             <IconButton size="medium">
                                 <SiJupyter />
