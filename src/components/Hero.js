@@ -5,6 +5,7 @@ import { Link } from "@mui/material"
 import { IconButton } from "@mui/material"
 import { Avatar } from "@mui/material"
 import { Tooltip } from "@mui/material"
+import DescriptionIcon from '@mui/icons-material/Description';
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import EmailIcon from '@mui/icons-material/Email'
 import hafiz from './images/hafiz.jpg'
@@ -81,12 +82,17 @@ function Hero() {
             >
                 <Tooltip title="LinkedIn">
                     <Link href="https://www.linkedin.com/in/muhammad-hafiz-bin-mohd-nasarudin-7a73171ab/" underline="none" target={"_blank"} sx={{mx:1}}>
-                        <IconButton><LinkedInIcon sx={{color:'white', fontSize: 46}}/></IconButton>
+                        <IconButton><LinkedInIcon sx={{color:'white', fontSize: 44}}/></IconButton>
                     </Link>
                 </Tooltip>
                 <Tooltip title="hafizn24@gmail.com">
                     <Link href="mailto:hafizn24@gmail.com" underline="none" target={"_blank"} sx={{mx:1}}>
-                        <IconButton><EmailIcon sx={{color:'white', fontSize: 46}}/></IconButton>
+                        <IconButton><EmailIcon sx={{color:'white', fontSize: 44}}/></IconButton>
+                    </Link>
+                </Tooltip>
+                <Tooltip title="Resume">
+                    <Link href="" underline="none" target={"_blank"} sx={{mx:1}}>
+                        <IconButton><DescriptionIcon sx={{color:'white', fontSize: 44}}/></IconButton>
                     </Link>
                 </Tooltip>
             </Grid>
