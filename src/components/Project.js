@@ -23,6 +23,7 @@ function Project() {
                 </Typography>
             </Box>
         </Grid>
+        {/* Put codes below into seperated func */}
         <Box sx={{
             ml:{
                 lg:3
@@ -47,7 +48,7 @@ function Project() {
             // border: '1px dashed grey',
         }}>
             <Typography variant="h5" color="primary" sx={{ fontWeight: 'bold' }}>
-                Final Year Project
+                Face Mask Detection Using CNN
             </Typography>
             <Grid
                 container
