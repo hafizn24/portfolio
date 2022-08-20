@@ -12,7 +12,14 @@ import hafiz from './images/hafiz.jpg'
 
 function Hero() {
     return (
-    <Box sx={{p:2}}>
+    <Box sx={{
+        m:{
+            xs:2,
+            sm:4,
+            md:10,
+            lg:14
+        }
+    }}>
         <Grid
             container
             direction="column"

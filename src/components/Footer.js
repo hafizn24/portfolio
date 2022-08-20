@@ -9,7 +9,19 @@ function Footer() {
         alignItems="center"
     >
         <Box sx={{
-            p:4
+            pt:{
+                xs:2,
+                sm:4,
+                md:6,
+                lg:8
+            },
+            pb:{
+                xs:1,
+                sm:3,
+                md:4,
+                lg:6
+            },
+            // border: '1px dashed grey'
         }}>
             <Typography sx={{ fontWeight: 'bold'}} variant="subtitle2">
                 Hafiz Nasarudin &#169; 2022

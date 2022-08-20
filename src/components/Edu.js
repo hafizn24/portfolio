@@ -8,7 +8,14 @@ function Edu() {
             justifyContent="center"
             alignItems="center"
         >
-        <Box sx={{p:2}}>
+        <Box sx={{
+            m:{
+                xs:2,
+                sm:4,
+                md:6,
+                lg:8
+            }
+        }}>
             <Grid
                 container
                 direction="column"

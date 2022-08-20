@@ -26,7 +26,14 @@ import DevicesIcon from '@mui/icons-material/Devices';
 
 function Skill() {
   return (
-    <Box sx={{p:2}}>
+    <Box sx={{
+        mt:{
+            xs:2,
+            sm:4,
+            md:6,
+            lg:8
+        }
+    }}>
         <Grid
             container
             direction="row"

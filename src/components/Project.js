@@ -17,9 +17,11 @@ function Project() {
             justifyContent="center"
             alignItems="center"
         >
-            <Typography variant="h4" sx={{m:2}}>
-                Projects
-            </Typography>
+            <Box sx={{m:2}}>
+                <Typography variant="h4" sx={{m:2}}>
+                    Projects
+                </Typography>
+            </Box>
         </Grid>
         <Box sx={{
             ml:{
