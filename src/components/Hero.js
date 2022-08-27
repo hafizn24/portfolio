@@ -10,6 +10,8 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import EmailIcon from '@mui/icons-material/Email'
 import hafiz from './images/hafiz.jpg'
 
+import resume from './pdfs/resume.pdf'
+
 function Hero() {
     return (
     <Box sx={{
@@ -98,7 +100,7 @@ function Hero() {
                     </Link>
                 </Tooltip>
                 <Tooltip title="Resume">
-                    <Link href="" underline="none" target={"_blank"} sx={{mx:1}}>
+                    <Link href={resume} underline="none" target={"_blank"} sx={{mx:1}}>
                         <IconButton><DescriptionIcon sx={{color:'white', fontSize: 44}}/></IconButton>
                     </Link>
                 </Tooltip>
