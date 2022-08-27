@@ -1,6 +1,8 @@
 import { Box, Grid, Typography, CardMedia, Button } from "@mui/material"
+import { Link } from "@mui/material"
 
 import fyp from './images/fyp_colage.png'
+import ieee from './pdfs/ieee.pdf'
 
 function Project() {
   return (
@@ -94,7 +96,9 @@ function Project() {
                     .
                 </Typography>
             </Grid>
-            <Button variant="outlined" sx={{mt:2, px:4}}>Learn More</Button>
+            <Link href={ieee} underline="none" target={"_blank"}>
+                <Button variant="outlined" sx={{mt:2, px:4}}>Learn More</Button>
+            </Link>
         </Box>
     </Grid>
   )
