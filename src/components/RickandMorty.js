@@ -22,6 +22,7 @@ function RickandMorty() {
           tempJson = await response.json()
         }
         setList(tempList)
+        console.log(list)
       }
       catch(error){
         console.log(error)
@@ -32,7 +33,7 @@ function RickandMorty() {
 
   return (
     <div>
-      {list[0].name}
+      Test
     </div>
   )
 }
