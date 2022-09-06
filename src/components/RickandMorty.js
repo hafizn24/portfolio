@@ -1,28 +1,28 @@
 import React, {useEffect, useState} from 'react'
 
 function RickandMorty() {
-  const[list, setList] = useState("")
+  const[arrayList, setArrayList] = useState()
 
-  
   useEffect(() => {
     const url = 'https://rickandmortyapi.com/api/character'
     const fetchData = async() =>{
       try{
-        var response = await fetch(url)
-        var tempJson = await response.json()
+        let tempUrl = []
+        // tempUrl.push(url)
 
-        const tempList = []
+        let response = await fetch(url)
+        let tempJson = await response.json()
 
-        while(tempJson.info.next != null){ 
+        while(tempJson.info.next != null){
+
           for(let i in tempJson.results){
-            tempList.push(tempJson.results[i])
+            tempUrl.push(tempJson.results[i].name)
           }
 
           response = await fetch(tempJson.info.next)
           tempJson = await response.json()
         }
-        setList(tempList)
-        console.log(list)
+        console.log(tempUrl)
       }
       catch(error){
         console.log(error)
