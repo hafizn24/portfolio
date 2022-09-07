@@ -5,7 +5,11 @@ function RickandMorty({array}) {
   return (
     <div>
       {console.log(array[0])}
-      {array[0].name}
+      {
+        if(array[0] != null){
+          array[0].name
+        }
+      }
     </div>
   )
 }
