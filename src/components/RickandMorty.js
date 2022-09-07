@@ -16,9 +16,9 @@ function RickandMorty({array}) {
   return (
     <div>
       {console.log(array[array.length - 1])}
-      {name}
-      {status}
-      {species}
+      <p>{name}</p>
+      <p>{status}</p>
+      <p>{species}</p>
     </div>
   )
 }
