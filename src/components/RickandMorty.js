@@ -6,7 +6,7 @@ function RickandMorty({array}) {
     if(array[array.length - 1] != null){
       return(
         <div>
-          <p>{array[array.length - 1]}.name</p>
+          <p>{{array[array.length - 1]}}.name</p>
         </div>)
     }
   }
