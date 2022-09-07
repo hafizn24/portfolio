@@ -6,7 +6,7 @@ import { useRef } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Link, Button } from "@mui/material"
 
-import RickandMorty from './RickandMorty'
+import RickandMortyMain from './RickandMortyMain'
 import Appbar from './Appbar'
 import Hero from './Hero'
 import Skill from './Skill'
