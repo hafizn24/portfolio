@@ -3,14 +3,14 @@ import React, {useEffect, useState} from 'react'
 function RickandMorty({array}) {
   
   const display = () =>{
-    if(array[0] != null){
-      return array[0].name
+    if(array[array.length - 1] != null){
+      return array[array.length - 1].name
     }
   }
 
   return (
     <div>
-      {console.log(array[0])}
+      {console.log(array[array.length - 1])}
       {display()}
     </div>
   )
