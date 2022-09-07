@@ -6,10 +6,10 @@ function RickandMorty({array}) {
     if(array[array.length - 1] != null){
       return(
         <div>
-          <p>array[array.length - 1].name</p>
-          <p>array[array.length - 1].image</p>
-          <p>array[array.length - 1].species</p>
-          <p>array[array.length - 1].status</p>
+          <p>{array[array.length - 1]}.name</p>
+          <p>{array[array.length - 1]}.image</p>
+          <p>{array[array.length - 1]}.species</p>
+          <p>{array[array.length - 1]}.status</p>
         </div>)
     }
   }
