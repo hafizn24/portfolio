@@ -4,7 +4,7 @@ function RickandMorty({array}) {
 
   return (
     <div>
-      {console.log(arrayList[0])}
+      {console.log(array)}
     </div>
   )
 }
