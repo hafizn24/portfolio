@@ -4,10 +4,7 @@ function RickandMorty({array}) {
   
   const display = () =>{
     if(array[array.length - 1] != null){
-      return(
-        <div>
-          <p>{{array[array.length - 1]}}.name</p>
-        </div>)
+      return(array[array.length - 1].name)
     }
   }
 
