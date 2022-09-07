@@ -3,7 +3,7 @@ import { CssBaseline } from '@mui/material'
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-import RickandMorty from './components/RickandMorty'
+import RickandMortyMain from './components/RickandMortyMain'
 import Main from './components/Main'
 import './App.css';
 
@@ -36,7 +36,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Main/>} />
-          <Route path='/rickandmorty' element={<RickandMorty />} />
+          <Route path='/rickandmorty' element={<RickandMortyMain />} />
         </Routes>
       </BrowserRouter>
 		</ThemeProvider>
