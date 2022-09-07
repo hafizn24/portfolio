@@ -1,4 +1,7 @@
 import React, {useEffect, useState} from 'react'
+import { CardMedia, Card } from '@mui/material'
+
+import loading from './images/loading.gif'
 
 function RickandMorty({array}) {
   var name = ''
@@ -10,6 +13,15 @@ function RickandMorty({array}) {
       name = array[array.length - 1].name
       status = array[array.length - 1].status
       species = array[array.length - 1].species
+    }else{
+      return(
+        <CardMedia 
+          component="img"
+          alt={loading}
+          height="300px"
+          image={loading}
+        />
+      )
     }
   }
 
