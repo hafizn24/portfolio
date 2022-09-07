@@ -5,7 +5,7 @@ import RickandMorty from './RickandMorty'
 function RickandMortyMain() {
 
   const [arrayList, setArrayList] = useState('')
-  useEffect(() =>RickandMortyMain {
+  useEffect(() => {
     const url = 'https://rickandmortyapi.com/api/character'
 
     const fetchData = async() =>{
