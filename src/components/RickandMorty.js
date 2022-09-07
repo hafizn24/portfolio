@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from 'react'
 
 function RickandMorty({array}) {
-  const name = ''
-  const status = ''
-  const species = ''
+  var name = ''
+  var status = ''
+  var species = ''
   
   const display = () =>{
     if(array[array.length - 1] != null){
