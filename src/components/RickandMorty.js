@@ -6,7 +6,6 @@ import RickandMortyStat from './RickandMortyStat'
 import loading from './images/loading.gif'
 
 function RickandMorty({array}) {
-
   const genderList = []
   for(let i in array){
     genderList.push(array[i].gender)
@@ -26,14 +25,12 @@ function RickandMorty({array}) {
           height="300px"
           image={loading}
         />
-      )
+      )}
     }
-  }
 
   return (
     <div>
       {display()}
-      <p>{array[array.length - 1].name}</p>
       <RickandMortyStat list = {genderList} title = {'Gender'}/>
       <br />
       <RickandMortyStat list = {speciesList} title = {'Species'}/>
