@@ -37,7 +37,6 @@ function RickandMorty({array}) {
 
   return (
     <div>
-      {console.log(show)}
       {display()}
       <Box sx={{
         mt:{
