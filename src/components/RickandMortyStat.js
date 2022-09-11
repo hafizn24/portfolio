@@ -38,7 +38,7 @@ function RickandMortyStat({list ,title}) {
             my:1,
             px:5,
             pt:2,
-            pb:5,
+            pb:2,
             minWidth: 300
         }}>
             <Grid
@@ -47,7 +47,7 @@ function RickandMortyStat({list ,title}) {
                 justifyContent="left"
                 alignItems="center"
             >
-                <Typography variant="h4" color="secondary">
+                <Typography variant="h5" color="secondary">
                     {title}
                 </Typography>
             </Grid>
@@ -57,11 +57,8 @@ function RickandMortyStat({list ,title}) {
                 justifyContent="left"
                 alignItems="left"
             >
-                <Box sx={{p:1}}>
+                <Box sx={{py:1}}>
                    {countDisplay}
-                </Box>
-                <Box sx={{p:1}}>
-                    
                 </Box>
             </Grid>
         </Paper>

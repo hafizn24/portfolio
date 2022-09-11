@@ -1,9 +1,7 @@
 import React, {useEffect, useState} from 'react'
-import { CardMedia, Card, Box, Grid } from '@mui/material'
+import { CardMedia, Card, Box, Grid, CircularProgress  } from '@mui/material'
 
 import RickandMortyStat from './RickandMortyStat'
-
-import loading from './images/loading.gif'
 
 function RickandMorty({array}) {
   const genderList = []
@@ -24,18 +22,22 @@ function RickandMorty({array}) {
   const display = () =>{
     if(array[array.length - 1] == null){
       return(
-        <CardMedia 
-          component="img"
-          alt={loading}
-          height="300px"
-          image={loading}
-        />
+        <>
+          <Grid
+            container
+            direction="column"
+            justifyContent="center"
+            alignItems="center"
+          >
+            <CircularProgress/>
+          </Grid>
+        </>
       )}
-    console.log(array[0])
     }
 
   return (
     <div>
+      {console.log(show)}
       {display()}
       <Box sx={{
         mt:{
@@ -43,7 +45,7 @@ function RickandMorty({array}) {
             sm:4,
             md:6,
             lg:8
-        }
+        },
      }}>
         <Grid
           container
