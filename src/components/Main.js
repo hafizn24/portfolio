@@ -59,6 +59,7 @@ function App() {
       </center>
 
       <div ref={exp_id}/>
+      <br />
       <Divider variant="middle" />
       <Skill />
       <Edu />

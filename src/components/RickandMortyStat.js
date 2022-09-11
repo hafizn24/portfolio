@@ -1,3 +1,4 @@
+import { Paper, Grid, Box, Typography } from "@mui/material"
 import React from 'react'
 
 function RickandMortyStat({list ,title}) {
@@ -19,13 +20,44 @@ function RickandMortyStat({list ,title}) {
     const count = countFunc()
     const countDisplay = Array.from(
         count.entries(), ([key, value]) => 
-        <div>{key + ": " + value}</div>
+        <>
+            <Typography variant="body2">{key + ": "}<b>{value}</b></Typography>
+        </>
+        
     )
 
     return (
-        <div>
-            {countDisplay}
-        </div>
+        <Paper elevation={0} sx={{
+            mx:2,
+            my:1,
+            px:5,
+            pt:2,
+            pb:5
+        }}>
+            <Grid
+                container
+                direction="row"
+                justifyContent="center"
+                alignItems="center"
+            >
+                <Typography variant="h4" color="secondary">
+                    {title}
+                </Typography>
+            </Grid>
+            <Grid
+                container
+                direction="column"
+                justifyContent="center"
+                alignItems="center"
+            >
+                <Box sx={{p:1}}>
+                   {countDisplay}
+                </Box>
+                <Box sx={{p:1}}>
+                    
+                </Box>
+            </Grid>
+        </Paper>
     )
 }
 

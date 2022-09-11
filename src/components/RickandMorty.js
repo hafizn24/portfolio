@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import { CardMedia, Card } from '@mui/material'
+import { CardMedia, Card, Box, Grid } from '@mui/material'
 
 import RickandMortyStat from './RickandMortyStat'
 
@@ -16,6 +16,11 @@ function RickandMorty({array}) {
     speciesList.push(array[i].species)
   }
 
+  const statusList = []
+  for(let i in array){
+    statusList.push(array[i].status)
+  }
+
   const display = () =>{
     if(array[array.length - 1] == null){
       return(
@@ -26,14 +31,33 @@ function RickandMorty({array}) {
           image={loading}
         />
       )}
+    console.log(array[0])
     }
 
   return (
     <div>
       {display()}
-      <RickandMortyStat list = {genderList} title = {'Gender'}/>
-      <br />
-      <RickandMortyStat list = {speciesList} title = {'Species'}/>
+      <Box sx={{
+        mt:{
+            xs:2,
+            sm:4,
+            md:6,
+            lg:8
+        }
+     }}>
+        <Grid
+          container
+          direction="row"
+          justifyContent="center"
+          alignItems="center"
+        >
+          <RickandMortyStat list = {genderList} title = {'Gender'}/>
+          <br />
+          <RickandMortyStat list = {speciesList} title = {'Species'}/>
+          <br />
+          <RickandMortyStat list = {statusList} title = {'Status'}/>
+        </Grid>
+      </Box>
     </div>
   )
 }
