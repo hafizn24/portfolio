@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react'
 import { CardMedia, Card, Box, Grid, CircularProgress  } from '@mui/material'
 
 import RickandMortyStat from './RickandMortyStat'
+import RickandMortyTable from './RickandMortyTable'
 
 function RickandMorty({array}) {
   const genderList = []
@@ -29,7 +30,7 @@ function RickandMorty({array}) {
             justifyContent="center"
             alignItems="center"
           >
-            <CircularProgress/>
+            <CircularProgress sx={{m:2}}/>
           </Grid>
         </>
       )}
@@ -57,6 +58,8 @@ function RickandMorty({array}) {
           <RickandMortyStat list = {speciesList} title = {'Species'}/>
           <br />
           <RickandMortyStat list = {statusList} title = {'Status'}/>
+          <br />
+          <RickandMortyTable array = {array}/>
         </Grid>
       </Box>
     </div>
