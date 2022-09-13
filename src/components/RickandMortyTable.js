@@ -18,10 +18,10 @@ function RickandMortyTable({array}) {
         alignItems="center"
     >
         <Box sx={{
-            m:2,
+            my:2,
             height: 370,
             width:{
-                xs:'100%',
+                xs:'95%',
                 sm:'60%',
                 md:'42%',
                 lg:'32%'
