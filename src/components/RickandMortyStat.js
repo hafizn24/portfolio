@@ -1,6 +1,8 @@
 import { Paper, Grid, Box, Typography } from "@mui/material"
 import React from 'react'
 
+import RickandMortyChart from "./RickandMortyChart"
+
 function RickandMortyStat({list ,title}) {
     function countFunc(){
         let tempmap =  new Map()
@@ -24,6 +26,7 @@ function RickandMortyStat({list ,title}) {
 
     const unique = [...new Set(list)]
     const count = countFunc()
+    const countChart = countFuncChart()
 
     const countDisplay = Array.from(
         count.entries(), ([key, value]) =>
@@ -31,6 +34,28 @@ function RickandMortyStat({list ,title}) {
             <Typography variant="body2">{key + ": "}<b>{value}</b></Typography>
         </>
     )
+
+    function countFuncChart(){
+        let tempmap =  new Map()
+        for(let i in unique){
+            let index = 0
+            for(let j in list){
+                if(list[j] == unique[i]){
+                    index += 1
+                }
+            }
+            tempmap.set(unique[i], index)
+        }
+        return tempmap
+    }
+
+    function value(){
+        const values = []
+        Array.from(countChart.entries(), ([key, value]) => 
+            values.push(value)
+        )
+        return values
+    }
 
     return (
         <Paper elevation={0} sx={{
@@ -53,12 +78,17 @@ function RickandMortyStat({list ,title}) {
             </Grid>
             <Grid
                 container
-                direction="column"
-                justifyContent="left"
-                alignItems="left"
+                direction="row"
+                justifyContent="space-between"
+                alignItems="center"
             >
                 <Box sx={{py:1}}>
                    {countDisplay}
+                </Box>
+                <Box sx={{py:1}}>
+                    {/* {console.log(value())} */}
+                    {/* {console.log(unique)} */}
+                    <RickandMortyChart array={value()} unique = {unique}/>
                 </Box>
             </Grid>
         </Paper>

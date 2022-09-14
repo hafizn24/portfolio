@@ -19,7 +19,7 @@ function Hero() {
             xs:2,
             sm:4,
             md:10,
-            lg:14
+            lg:12
         }
     }}>
         <Grid
