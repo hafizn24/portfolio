@@ -53,7 +53,7 @@ function App() {
       <Hero />
 
       <center>
-        <Link href='/rickandmorty' underline="none" sx={{mx:1}}>
+        <Link href='/rickandmorty' underline="none" >
           <Button>Enter</Button>
         </Link>
       </center>

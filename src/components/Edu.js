@@ -52,7 +52,7 @@ function Edu() {
                         Universiti Teknologi MARA (UiTM), SHAH ALAM
                     </Typography>
                     <Typography variant="subtitle2">
-                        CGPA: 3.46/4.00
+                        CGPA: 3.51/4.00
                     </Typography>
                 </Box>
             </Grid>

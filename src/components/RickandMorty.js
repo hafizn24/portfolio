@@ -3,6 +3,7 @@ import { CardMedia, Card, Box, Grid, CircularProgress  } from '@mui/material'
 
 import RickandMortyStat from './RickandMortyStat'
 import RickandMortyTable from './RickandMortyTable'
+import RickandMortyCard from './RickandMortyCard'
 
 function RickandMorty({array}) {
   const genderList = []
@@ -38,13 +39,13 @@ function RickandMorty({array}) {
 
   return (
     <div>
-      {display()}
+      {display}
       <Box sx={{
-        mt:{
+        pt:{
             xs:2,
-            sm:4,
-            md:6,
-            lg:8
+            sm:2,
+            md:4,
+            lg:6
         },
      }}>
         <Grid
@@ -53,6 +54,7 @@ function RickandMorty({array}) {
           justifyContent="center"
           alignItems="center"
         >
+          {/* <RickandMortyCard array = {array} display={display}/> */}
           <RickandMortyStat list = {genderList} title = {'Gender'}/>
           <br />
           <RickandMortyStat list = {speciesList} title = {'Species'}/>

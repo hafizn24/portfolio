@@ -1,6 +1,10 @@
 import React, {useEffect, useState} from 'react'
+import Card from '@mui/material/Card'
+import CardMedia from '@mui/material/CardMedia'
+import { Box } from '@mui/material'
 
 import RickandMorty from './RickandMorty'
+import wallpaper from './images/wallpaper.jpg'
 
 function RickandMortyMain() {
 
@@ -36,11 +40,15 @@ function RickandMortyMain() {
   },[])
 
   return (
-    <div>
-      <RickandMorty 
-        array={arrayList}
-      />
-    </div>
+    <Box
+    style={{
+      backgroundImage: `url(${wallpaper})`,
+      backgroundSize: "cover",
+    }}
+    >
+      <CardMedia />
+      <RickandMorty array={arrayList} />
+    </Box>
   )
 }
 

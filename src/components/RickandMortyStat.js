@@ -86,8 +86,6 @@ function RickandMortyStat({list ,title}) {
                    {countDisplay}
                 </Box>
                 <Box sx={{py:1}}>
-                    {/* {console.log(value())} */}
-                    {/* {console.log(unique)} */}
                     <RickandMortyChart array={value()} unique = {unique}/>
                 </Box>
             </Grid>
