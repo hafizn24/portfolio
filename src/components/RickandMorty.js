@@ -7,18 +7,20 @@ import RickandMortyCard from './RickandMortyCard'
 
 function RickandMorty({array}) {
   const genderList = []
+  const speciesList = []
+  const statusList = []
+
+  const nameList = []
+  const locationList = []
+  const imageList = []
+
   for(let i in array){
     genderList.push(array[i].gender)
-  }
-
-  const speciesList = []
-  for(let i in array){
     speciesList.push(array[i].species)
-  }
-
-  const statusList = []
-  for(let i in array){
     statusList.push(array[i].status)
+    nameList.push(array[i].name)
+    locationList.push(array[i].location.name)
+    imageList.push(array[i].image)
   }
 
   const display = () =>{
@@ -54,7 +56,7 @@ function RickandMorty({array}) {
           justifyContent="center"
           alignItems="center"
         >
-          {/* <RickandMortyCard array = {array} display={display}/> */}
+          <RickandMortyCard gender = {genderList} species = {speciesList} status = {statusList} name = {nameList} location = {locationList} image = {imageList}/>
           <RickandMortyStat list = {genderList} title = {'Gender'}/>
           <br />
           <RickandMortyStat list = {speciesList} title = {'Species'}/>
