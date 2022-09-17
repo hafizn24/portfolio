@@ -51,7 +51,7 @@ function RickandMorty({array}) {
             md:4,
             lg:6
         },
-     }}>
+      }}>
         <Grid
           container
           direction="row"
@@ -59,6 +59,13 @@ function RickandMorty({array}) {
           alignItems="center"
         >
           <RickandMortyCard gender = {genderList} species = {speciesList} status = {statusList} name = {nameList} location = {locationList} image = {imageList}/>
+        </Grid>
+        <Grid
+          container
+          direction="row"
+          justifyContent="center"
+          alignItems="center"
+        >
           <RickandMortyStat list = {genderList} title = {'Gender'}/>
           <br />
           <RickandMortyStat list = {speciesList} title = {'Species'}/>
