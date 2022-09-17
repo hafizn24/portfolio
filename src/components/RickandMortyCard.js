@@ -3,26 +3,25 @@ import Card from '@mui/material/Card'
 import CardContent from '@mui/material/CardContent'
 import Typography from '@mui/material/Typography'
 import { Grid, Avatar, Chip } from '@mui/material'
-import {CardMedia} from '@mui/material'
+import {CardMedia, IconButton} from '@mui/material'
+
+import RefreshIcon from '@mui/icons-material/Refresh';
 
 function RickandMortyCard({gender, species, status, name, location, image}) {
-    const [random,setRandom] = useState(0)
+    let index  = Math.floor(Math.random() * name.length)
+    const [random, setRandom] = useState(index)
 
-    useEffect(() =>{
-        const interval = () => setInterval(() => {
-            setRandom(Math.floor(Math.random() * name.length))
-            
-        }, 8000)
-        interval()
-        return () => clearInterval(interval)
-    },)
+    const click = () =>{
+        setRandom(Math.floor(Math.random() * name.length))
+        console.log('click')
+    }
    
     return (
     <Card  elevation={0}
         sx={{
-            py:1,
+            pt:1,
             my:2,
-            width:270
+            width:270,
         }}
     >
         <CardContent>
@@ -35,18 +34,26 @@ function RickandMortyCard({gender, species, status, name, location, image}) {
                 {console.log(random)}
                 <Avatar alt='Image' src={image[random]} sx={{ width: 140, height: 140, mb:1 }} />
                 <Chip label={status[random]} />
-                <Typography variant="h5" component="div">
+                <Typography variant="h5" component="div" color="primary">
                 {name[random]}
                 </Typography>
                 <Typography>
                 {location[random]}
                 </Typography>
-                <Typography color="text.secondary">
+                <Typography color="secondary">
                 {species[random]}
                 </Typography>
                 <Typography variant="body2">
                 {gender[random]}
                 </Typography>
+            </Grid>
+            <Grid
+                container
+                direction="row"
+                justifyContent="flex-end"
+                alignItems="flex-end"
+            >
+                <IconButton onClick={click}><RefreshIcon sx={{fontSize: 30}} /></IconButton>
             </Grid>
         </CardContent>
     </Card>
