@@ -5,6 +5,8 @@ import RickandMortyStat from './RickandMortyStat'
 import RickandMortyTable from './RickandMortyTable'
 import RickandMortyCard from './RickandMortyCard'
 
+import rnm from './images/rnm.png'
+
 function RickandMorty({array}) {
   const genderList = []
   const speciesList = []
@@ -58,6 +60,11 @@ function RickandMorty({array}) {
           justifyContent="center"
           alignItems="center"
         >
+          <CardMedia 
+            component="img"
+            image= {rnm}
+            alt="Rick and Morty"
+          />
           <RickandMortyCard gender = {genderList} species = {speciesList} status = {statusList} name = {nameList} location = {locationList} image = {imageList}/>
         </Grid>
         <Grid

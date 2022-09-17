@@ -13,7 +13,6 @@ function RickandMortyCard({gender, species, status, name, location, image}) {
 
     const click = () =>{
         setRandom(Math.floor(Math.random() * name.length))
-        console.log('click')
     }
    
     return (
@@ -31,7 +30,6 @@ function RickandMortyCard({gender, species, status, name, location, image}) {
                 justifyContent="center"
                 alignItems="center"
             >
-                {console.log(random)}
                 <Avatar alt='Image' src={image[random]} sx={{ width: 140, height: 140, mb:1 }} />
                 <Chip label={status[random]} />
                 <Typography variant="h5" component="div" color="primary">
