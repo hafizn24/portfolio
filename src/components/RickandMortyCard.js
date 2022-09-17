@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Card from '@mui/material/Card'
 import CardContent from '@mui/material/CardContent'
 import Typography from '@mui/material/Typography'
@@ -6,8 +6,17 @@ import { Grid, Avatar, Chip } from '@mui/material'
 import {CardMedia} from '@mui/material'
 
 function RickandMortyCard({gender, species, status, name, location, image}) {
-    const random = Math.floor(Math.random() * name.length)
-    
+    const [random,setRandom] = useState(0)
+
+    useEffect(() =>{
+        const interval = () => setInterval(() => {
+            setRandom(Math.floor(Math.random() * name.length))
+            
+        }, 15000)
+        interval()
+        return () => clearInterval(interval)
+    },)
+   
     return (
     <Card  elevation={0}
         sx={{
@@ -23,6 +32,7 @@ function RickandMortyCard({gender, species, status, name, location, image}) {
                 justifyContent="center"
                 alignItems="center"
             >
+                {console.log(random)}
                 <Avatar alt='Image' src={image[random]} sx={{ width: 140, height: 140, mb:1 }} />
                 <Chip label={status[random]} />
                 <Typography variant="h5" component="div">
