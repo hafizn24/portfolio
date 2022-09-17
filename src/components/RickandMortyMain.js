@@ -44,9 +44,9 @@ function RickandMortyMain() {
     style={{
       backgroundImage: `url(${wallpaper})`,
       backgroundSize: "cover",
+      backgroundAttachment: "fixed"
     }}
     >
-      <CardMedia />
       <RickandMorty array={arrayList} />
     </Box>
   )

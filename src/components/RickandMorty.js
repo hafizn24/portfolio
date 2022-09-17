@@ -33,15 +33,17 @@ function RickandMorty({array}) {
             justifyContent="center"
             alignItems="center"
           >
-            <CircularProgress sx={{m:2}}/>
+            {console.log('loading')}
+            <CircularProgress sx={{mt:2}}/>
           </Grid>
         </>
-      )}
+      )
     }
+  }
 
   return (
     <div>
-      {display}
+      {display()}
       <Box sx={{
         pt:{
             xs:2,
