@@ -12,7 +12,7 @@ function RickandMortyCard({gender, species, status, name, location, image}) {
         const interval = () => setInterval(() => {
             setRandom(Math.floor(Math.random() * name.length))
             
-        }, 15000)
+        }, 8000)
         interval()
         return () => clearInterval(interval)
     },)
