@@ -75,7 +75,7 @@ function RnM() {
                     The Rick and Morty API
                 </Typography>
                 <Typography variant="body2">
-                    is filled with canonical information as seen on the TV show.
+                    is filled with canonical information as seen on the TV show
                 </Typography>
                 <Typography variant="body2">
                     .
