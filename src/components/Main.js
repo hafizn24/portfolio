@@ -14,6 +14,7 @@ import Edu from './Edu'
 import Cert from './Cert'
 import Project from './Project'
 import Footer from './Footer'
+import RnM from './RnM'
 
 const font = "'Lato', sans-serif"
 
@@ -51,13 +52,6 @@ function App() {
       <div ref={about_id}/>
       <Appbar exe_about={exe_about} exe_exp={exe_exp} exe_project={exe_project}/>
       <Hero />
-
-      <center>
-        <Link href='/rickandmorty' underline="none" >
-          <Button>Enter</Button>
-        </Link>
-      </center>
-
       <div ref={exp_id}/>
       <br />
       <Divider variant="middle" />
@@ -66,7 +60,9 @@ function App() {
       <Cert />
       <Divider variant="middle" />
       <div ref={project_id}/>
+      <br />
       <Project />
+      <RnM />
       <Footer />
 		</ThemeProvider>
   )
