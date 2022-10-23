@@ -5,87 +5,57 @@ import rnm from './images/rnm.png'
 
 function RnM() {
   return (
-    <Grid
-        container
-        direction="row-reverse"
-        justifyContent="space-around"
-        alignItems="center"
-        pt={2}
-        // sx={{border: '1px dashed grey'}}
+    <Box
+        sx={{
+            p:2
+        }}
     >
-        {/* Put codes below into seperated func */}
-        <Box sx={{
-            ml:{
-                lg:3
-            },
-            // border: '1px dashed grey',
-            width: {
-                lg: "50%"
-            }
-        }}>
-            <CardMedia 
-                component="img"
-                width="auto"
-                image={rnm}
-                alt="fyp"
-            />
-        </Box>
-        <Box sx={{
-            m:1,
-            ml:{
-                lg:3
-            }
-            // border: '1px dashed grey',
-        }}>
-            <Typography variant="h5" color="primary" sx={{ fontWeight: 'bold' }}>
-                Rick and Morty API Visualization
-            </Typography>
-            <Grid
-                container
-                direction="row"
-            >
-                <Typography variant="body2">
-                    The Rick and Morty API is a REST(ish) and GraphQL API based on the television show 
-                </Typography>
-                <Typography variant="body2" color="primary" sx={{ fontWeight: 'bold', ml:0.5 }}>
-                    Rick and Morty
-                </Typography>
-                <Typography variant="body2">.</Typography>
-            </Grid>
-            
-            <Grid
-                container
-                direction="row"
-            >
-                <Typography variant="body2">
-                    You will have access to about hundreds of 
-                </Typography>
-                <Typography variant="body2" color="primary" sx={{ fontWeight: 'bold', mx:0.5 }}>
-                    characters, images, locations and episodes
-                </Typography>
-                <Typography variant="body2">
-                    . 
-                </Typography>
-            </Grid>
-            <Grid
+        <Grid
             container
-            direction="row"
+            direction="row-reverse"
+            justifyContent="space-around"
+            alignItems="center"
+        >
+            <Box
+                sx={{
+                    width:{
+                        lg:'50%'
+                    }
+                }}
             >
-                <Typography variant="body2" color="primary" sx={{ fontWeight: 'bold', mr:0.5 }}>
-                    The Rick and Morty API
+                <CardMedia 
+                    component="img"
+                    width="auto"
+                    image={rnm}
+                    alt="fyp"
+                />
+            </Box>
+            <Box
+                sx={{
+                    p:2
+                }}
+            >
+                <Typography variant="h5" color="primary" sx={{ fontWeight: 'bold' }}>
+                    Airbnb Data Preparation and Visualization
                 </Typography>
-                <Typography variant="body2">
-                    is filled with canonical information as seen on the TV show
-                </Typography>
-                <Typography variant="body2">
-                    .
-                </Typography>
-            </Grid>
-            <Link href='/rickandmorty' underline="none">
-                <Button variant="outlined" sx={{mt:2, px:4}}>Learn More</Button>
-            </Link>
-        </Box>
-    </Grid>
+                <Box
+                    sx={{
+                        lg:'55%'
+                    }}
+                >
+                    <Typography variant="subtitle1">
+                        The Rick and Morty API is a REST(ish) and GraphQL API based on <br />
+                        the television show Rick and Morty. You will have access to about hundreds of <br />
+                        characters, images, locations and episodes. The Rick and Morty API <br />
+                        is filled with canonical information as seen on the TV show.
+                    </Typography>
+                </Box>
+                <Link href='/rickandmorty' underline="none">
+                    <Button variant="outlined" sx={{mt:2, px:4}}>Learn More</Button>
+                </Link>
+            </Box>
+        </Grid>
+    </Box>
   )
 }
 

@@ -6,101 +6,57 @@ import ieee from './pdfs/ieee.pdf'
 
 function Project() {
   return (
-    <Grid
-        container
-        direction="row"
-        justifyContent="flex-start"
-        alignItems="center"
-        pt={2}
-        // sx={{border: '1px dashed grey'}}
+    <Box
+        sx={{
+            p:2
+        }}
     >
+        <Typography variant="h4" align='center' sx={{m:2}}>Projects</Typography>
         <Grid
             container
-            justifyContent="center"
+            direction="row"
+            justifyContent="space-around"
             alignItems="center"
         >
-            <Box sx={{m:2}}>
-                <Typography variant="h4" sx={{m:2}}>
-                    Projects
+            <Box
+                sx={{
+                    width:{
+                        lg:'50%'
+                    }
+                }}
+            >
+                <CardMedia 
+                    component="img"
+                    width="auto"
+                    image={fyp}
+                    alt="fyp"
+                />
+            </Box>
+            <Box
+                sx={{
+                    p:2
+                }}
+            >
+                <Typography variant="h5" color="primary" sx={{ fontWeight: 'bold' }}>
+                    Airbnb Data Preparation and Visualization
                 </Typography>
+                <Box
+                    sx={{
+                        lg:'55%'
+                    }}
+                >
+                    <Typography variant="subtitle1">
+                        The system can detect a face mask by implementing a CNN classification algorithm. <br />
+                        This study focuses on two CNN models with different optimizers trained with <br />
+                        an image dataset labeled in two separateclass labels.
+                    </Typography>
+                </Box>
+                <Link href={ieee} underline="none" target={"_blank"}>
+                    <Button variant="outlined" sx={{mt:2, px:4}}>Learn More</Button>
+                </Link>
             </Box>
         </Grid>
-        {/* Put codes below into seperated func */}
-        <Box sx={{
-            ml:{
-                lg:3
-            },
-            // border: '1px dashed grey',
-            width: {
-                lg: "50%"
-            }
-        }}>
-            <CardMedia 
-                component="img"
-                width="auto"
-                image={fyp}
-                alt="fyp"
-            />
-        </Box>
-        <Box sx={{
-            m:1,
-            ml:{
-                lg:3
-            }
-            // border: '1px dashed grey',
-        }}>
-            <Typography variant="h5" color="primary" sx={{ fontWeight: 'bold' }}>
-                Face Mask Detection Using CNN
-            </Typography>
-            <Grid
-                container
-                direction="row"
-            >
-                <Typography variant="body2">
-                    The system can detect a face mask by implementing a 
-                </Typography>
-                <Typography variant="body2" color="primary" sx={{ fontWeight: 'bold', ml:0.5 }}>
-                    CNN classification algorithm
-                </Typography>
-                <Typography variant="body2">.</Typography>
-            </Grid>
-            
-            <Grid
-                container
-                direction="row"
-            >
-                <Typography variant="body2">
-                    This study focuses on two
-                </Typography>
-                <Typography variant="body2" color="primary" sx={{ fontWeight: 'bold', mx:0.5 }}>
-                    CNN models
-                </Typography>
-                <Typography variant="body2">
-                    with different 
-                </Typography>
-                <Typography variant="body2" color="primary" sx={{ fontWeight: 'bold', ml:0.5 }}>
-                    optimizers
-                </Typography>
-            </Grid>
-            <Grid
-            container
-            direction="row"
-            >
-                <Typography variant="body2">
-                    trained with an image dataset labeled in two separate
-                </Typography>
-                <Typography variant="body2" color="primary" sx={{ fontWeight: 'bold', ml:0.5 }}>
-                    class labels
-                </Typography>
-                <Typography variant="body2">
-                    .
-                </Typography>
-            </Grid>
-            <Link href={ieee} underline="none" target={"_blank"}>
-                <Button variant="outlined" sx={{mt:2, px:4}}>Learn More</Button>
-            </Link>
-        </Box>
-    </Grid>
+    </Box>
   )
 }
 
