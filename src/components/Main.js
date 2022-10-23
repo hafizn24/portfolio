@@ -15,6 +15,7 @@ import Cert from './Cert'
 import Project from './Project'
 import Footer from './Footer'
 import RnM from './RnM'
+import Airbnb from './Airbnb'
 
 const font = "'Lato', sans-serif"
 
@@ -63,6 +64,7 @@ function App() {
       <br />
       <Project />
       <RnM />
+      <Airbnb />
       <Footer />
 		</ThemeProvider>
   )
