@@ -38,7 +38,7 @@ function Project() {
                 }}
             >
                 <Typography variant="h5" color="primary" sx={{ fontWeight: 'bold' }}>
-                    Airbnb Data Preparation and Visualization
+                    Face Mask Detection Using CNN
                 </Typography>
                 <Box
                     sx={{
