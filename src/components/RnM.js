@@ -36,7 +36,7 @@ function RnM() {
                 }}
             >
                 <Typography variant="h5" color="primary" sx={{ fontWeight: 'bold' }}>
-                    Airbnb Data Preparation and Visualization
+                    The Rick and Morty API
                 </Typography>
                 <Box
                     sx={{
