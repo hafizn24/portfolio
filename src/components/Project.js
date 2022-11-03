@@ -1,5 +1,6 @@
-import { Box, Grid, Typography, CardMedia, Button } from "@mui/material"
+import { Box, Grid, Typography, CardMedia, Button, Tooltip, IconButton,  } from "@mui/material"
 import { Link } from "@mui/material"
+import YouTubeIcon from '@mui/icons-material/YouTube';
 
 import fyp from './images/fyp_colage.png'
 import ieee from './pdfs/ieee.pdf'
@@ -54,6 +55,11 @@ function Project() {
                 <Link href={ieee} underline="none" target={"_blank"}>
                     <Button variant="outlined" sx={{mt:2, px:4}}>Learn More</Button>
                 </Link>
+                <Tooltip title="Demo Video">
+                    <Link href={'https://drive.google.com/file/d/141osFR3C834aFyq0hbv4JtP2FWAkKGa2/view?usp=sharing'} underline="none" target={"_blank"} sx={{mx:1}}>
+                        <IconButton sx={{mt:2}}><YouTubeIcon sx={{color:'white', fontSize: 44,}}/></IconButton>
+                    </Link>
+                </Tooltip>
             </Box>
         </Grid>
     </Box>
